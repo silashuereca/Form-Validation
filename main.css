@@ -52,7 +52,7 @@ body {
 }
 .sub-container-right h1 {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -73,7 +73,7 @@ form .heading p {
   margin-left: 20px;
 }
 
-.first-last-name {
+.main-input-container {
   display: flex;
   width: 100%;
   height: 60px;
@@ -83,7 +83,6 @@ form .heading p {
 
 .input-container {
   width: 100%;
-  padding-left: 15px;
 }
 .input-container input {
   padding: 0;
@@ -93,7 +92,7 @@ form .heading p {
   outline: none;
   border: none;
   font-size: 18px;
-  text-align: left;
+  text-align: center;
 }
 
 .left-input {
@@ -102,6 +101,37 @@ form .heading p {
 
 .email-text {
   margin-top: 15px;
+}
+
+textarea {
+  font-size: 18px;
+  text-align: center;
+  width: 99.3%;
+  padding-top: 5px;
+  border: 1px solid lightgray;
+  border-top: none;
+  resize: vertical;
+  outline: none;
+}
+
+.submit-container {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+button {
+  padding: 15px 45px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #2ecc71;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #27ae60;
 }
 
 /*# sourceMappingURL=main.css.map */

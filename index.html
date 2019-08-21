@@ -53,7 +53,7 @@
 						<p>TELL US YOUR NAME *</p>
 					</div>
 					<!-- Enter in your first and last name -->
-					<div class="first-last-name">
+					<div class="main-input-container">
 						<div class="input-container left-input">
 							<input
 								class="name"
@@ -79,13 +79,43 @@
 					<div class="heading email-text">
 						<p>ENTER YOUR EMAIL *</p>
 					</div>
-					<div class="input-container email-container">
-						<input
-							type="email"
-							placeholder="Eg. example@gmail.com"
-							onfocus="this.placeholder =''"
-							onblur="this.placeholder = 'Eg. example@gmail.com'"
-						/>
+					<div class="main-input-container">
+						<div class="input-container email-container">
+							<input
+								type="email"
+								placeholder="Eg. example@gmail.com"
+								onfocus="this.placeholder =''"
+								onblur="this.placeholder = 'Eg. example@gmail.com'"
+							/>
+						</div>
+					</div>
+					<!-- Enter in your phone number -->
+					<div class="heading email-text">
+						<p>ENTER PHONE NUMBER</p>
+					</div>
+					<div class="main-input-container">
+						<div class="input-container email-container">
+							<input
+								type="text"
+								placeholder="Eg. +1 800 000000"
+								onfocus="this.placeholder =''"
+								onblur="this.placeholder = 'Eg. +1 800 000000'"
+							/>
+						</div>
+					</div>
+					<!-- Message area -->
+					<div class="heading email-text">
+						<p>MESSAGE *</p>
+					</div>
+					<textarea
+						rows="8"
+						placeholder="Write us a message"
+						onfocus="this.placeholder = ''"
+						onblur="this.placeholder = 'Write us a message'"
+					></textarea>
+
+					<div class="submit-container">
+						<button>SEND MESSAGE</button>
 					</div>
 				</form>
 			</div>
