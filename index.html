@@ -13,6 +13,7 @@
 	</head>
 	<body>
 		<div class="container">
+			<!-- Left side of form container -->
 			<div class="sub-container-left">
 				<div class="contact-container">
 					<div>
@@ -43,7 +44,51 @@
 					</div>
 				</div>
 			</div>
-			<div class="sub-container-right"></div>
+
+			<!-- Right side of container (form) -->
+			<div class="sub-container-right">
+				<h1>Send Us A Message</h1>
+				<form>
+					<div class="heading">
+						<p>TELL US YOUR NAME *</p>
+					</div>
+					<!-- Enter in your first and last name -->
+					<div class="first-last-name">
+						<div class="input-container left-input">
+							<input
+								class="name"
+								type="text"
+								name="fname"
+								placeholder="First Name"
+								onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'First Name'"
+							/>
+						</div>
+						<div class="input-container">
+							<input
+								class="name"
+								type="text"
+								name="lname"
+								placeholder="Last name"
+								onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Last Name'"
+							/>
+						</div>
+					</div>
+					<!-- Enter in your email -->
+					<div class="heading email-text">
+						<p>ENTER YOUR EMAIL *</p>
+					</div>
+					<div class="input-container email-container">
+						<input
+							type="email"
+							placeholder="Eg. example@gmail.com"
+							onfocus="this.placeholder =''"
+							onblur="this.placeholder = 'Eg. example@gmail.com'"
+						/>
+					</div>
+				</form>
+			</div>
 		</div>
 	</body>
 </html>
