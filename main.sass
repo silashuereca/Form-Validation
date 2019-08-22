@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Livvic&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap')
     
 body 
     margin: 0
     padding: 0
     background-color: whitesmoke
-    font-family: 'Livvic', sans-serif
+    font-family: 'Montserrat', sans-serif
 
 $lime-green: limegreen
 $button-color: #2ecc71
@@ -66,7 +66,7 @@ form
         height: 60px
         border: 1px solid lightgray
         p 
-            font-size: 14px
+            font-size: 12px
             margin-left: 20px
 
 .main-input-container 
@@ -76,7 +76,8 @@ form
     border: 1px solid lightgray
     border-top: none
 
-.input-container 
+.input-container
+     position: relative
      width: 100%
      input
         padding: 0
@@ -94,31 +95,125 @@ form
 .email-text
     margin-top: 15px
 
+.textarea-container 
+    position: relative
+    width: 100%
+    height: 150px
+    border: 1px solid lightgray
+    border-top: none
+    padding-top: 15px
+
 textarea 
     font-size: 18px
     text-align: center
     width: 100%
+    height: 100%
     padding: 0
-    border: 1px solid lightgray
-    border-top: none
+    border: none
     resize: none
     outline: none
 
 .submit-container
     width: 100%
-    margin-top: 30px
+    margin-top: 60px
     margin-bottom: 100px
     text-align: center
 
-button
+.send-message
     padding: 15px 45px
     text-align: center
     font-size: 14px
+    color: white
     cursor: pointer
     background-color: $button-color
     transition: .3s ease
 
-button:hover 
-    background-color: #27ae60
+.send-message:hover 
+    background-color: rgba(0, 0, 10, 0.8)
+
+
+// Border animations 
+
+input ~ .border 
+    position: absolute
+    top: -11px
+    left: -10px
+    width: 100%
+    height: 100%
+    border: 1px solid $lime-green
+    padding: 10px
+    z-index: -1
+
+
+input:focus ~ .border 
+    z-index: 2
+    top: 0px
+    left: 0px
+    padding: 0px
+    transition: 0.5s
+
+.border 
+    position: absolute
+    top: -11px
+    left: -10px
+    width: 100%
+    height: 100%
+    border: 1px solid $lime-green
+    padding: 10px
+    z-index: -1
+
+textarea:focus ~ .border
+    z-index: 2
+    top: 0px
+    left: 0px
+    padding: 0px
+    transition: 0.5s
+
+// Error Messages
+.fa-exclamation
+    position: absolute
+    top: 25px
+    right: 5px
+    font-size: 12px
+    color: red
+
+input:focus ~ .fa-exclamation 
+    display: none
+
+
+@media only screen and (max-width: 770px)
+    .container
+        width: 100%
+        grid-template-columns: 1fr
+
+    .item1 
+        grid-area: 2/1
+
+    h1 
+        font-size: 30px
+
+    form
+        width: 90%
+
+    .sub-container-left
+        height: 600px
+
+    .main-input-container 
+        display: flex
+        flex-wrap: wrap
+        height: 100%
+    
+    .left-input 
+        border-right: none
+    
+    .right-input 
+        border-top: 1px solid lightgray
+
+    .input-container
+        height: 60px
+
+    
+
+
 
 
