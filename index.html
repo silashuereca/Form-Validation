@@ -49,7 +49,7 @@
 			<!-- Right side of container (form) -->
 			<div class="sub-container-right ">
 				<h1>Send Us A Message</h1>
-				<form>
+				<form onsubmit="return false">
 					<div class="heading">
 						<p>TELL US YOUR NAME *</p>
 					</div>
@@ -57,26 +57,31 @@
 					<div class="main-input-container">
 						<div class="input-container left-input">
 							<input
-								class="name"
+								class="input"
+								id="fname"
 								type="text"
 								name="fname"
 								placeholder="First Name"
 								onfocus="this.placeholder = ''"
 								onblur="this.placeholder = 'First Name'"
+								value=""
 							/>
 							<span class="border"></span>
-							<i id="error-icon" class="fas fa-exclamation"></i>
+							<i id="firstName-error" class="fas fa-exclamation error-icon"></i>
 						</div>
 						<div class="input-container right-input input-value">
 							<input
-								class="name"
+								class="input"
+								id="lname"
 								type="text"
 								name="lname"
 								placeholder="Last name"
 								onfocus="this.placeholder = ''"
 								onblur="this.placeholder = 'Last Name'"
+								value=""
 							/>
 							<span class="border"></span>
+							<i class="error-mark" class="fas fa-exclamation error-icon"></i>
 						</div>
 					</div>
 					<!-- Enter in your email -->
@@ -86,10 +91,12 @@
 					<div class="main-input-container">
 						<div class="input-container email-container">
 							<input
+								id="email"
 								type="email"
 								placeholder="Eg. example@gmail.com"
 								onfocus="this.placeholder =''"
 								onblur="this.placeholder = 'Eg. example@gmail.com'"
+								value=""
 							/>
 							<span class="border"></span>
 						</div>
@@ -101,10 +108,12 @@
 					<div class="main-input-container">
 						<div class="input-container email-container">
 							<input
+								id="phone-number"
 								type="text"
 								placeholder="Eg. +1 800 000000"
 								onfocus="this.placeholder =''"
 								onblur="this.placeholder = 'Eg. +1 800 000000'"
+								value=""
 							/>
 							<span class="border"></span>
 						</div>
@@ -115,15 +124,17 @@
 					</div>
 					<div class="textarea-container">
 						<textarea
+							id="message"
 							placeholder="Write us a message"
 							onfocus="this.placeholder = ''"
 							onblur="this.placeholder = 'Write us a message'"
+							value=""
 						></textarea>
 						<span class="border"></span>
 					</div>
 
 					<div class="submit-container">
-						<a class="send-message" onclick="myFunction()">SEND MESSAGE</a>
+						<button id="submit" class="submit">SEND MESSAGE</button>
 					</div>
 				</form>
 			</div>

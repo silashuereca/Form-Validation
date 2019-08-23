@@ -131,7 +131,7 @@ textarea {
   text-align: center;
 }
 
-.send-message {
+.submit {
   padding: 15px 45px;
   text-align: center;
   font-size: 14px;
@@ -141,7 +141,7 @@ textarea {
   transition: 0.3s ease;
 }
 
-.send-message:hover {
+.submit:hover {
   background-color: rgba(0, 0, 10, 0.8);
 }
 
@@ -188,7 +188,7 @@ textarea:focus ~ .border {
   top: 25px;
   right: 5px;
   font-size: 12px;
-  color: red;
+  color: white;
 }
 
 input:focus ~ .fa-exclamation {
